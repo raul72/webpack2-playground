@@ -1,3 +1,6 @@
+  * https://www.udemy.com/learn-webpack-2-from-scratch/
+  * https://github.com/howtocodeio/lets-learn-webpack-2
+
 ```
 yarn add -D webpack webpack-cli
 ```
@@ -37,5 +40,5 @@ yarn add -D webpack-dev-server
 ```
 
 ```
-yarn add -D browser-sync-webpack-plugin
+yarn add -D browser-sync browser-sync-webpack-plugin
 ```
