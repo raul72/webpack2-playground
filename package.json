@@ -13,6 +13,9 @@
   "author": "raul",
   "license": "ISC",
   "devDependencies": {
+    "babel-core": "^6",
+    "babel-loader": "^7",
+    "babel-preset-env": "^1.7.0",
     "css-loader": "^2.1.0",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",

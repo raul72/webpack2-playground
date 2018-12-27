@@ -1,4 +1,6 @@
 import './css/main.css';
 import './scss/main.scss';
 
-console.log('hi');
+import { hello } from './js/module'
+
+hello();
