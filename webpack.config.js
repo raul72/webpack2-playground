@@ -2,11 +2,13 @@ const path = require('path');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-	entry: './src/main.js',
+  mode: 'production',
+  entry: './src/main.js',
   output: {
     filename: 'main.js',
     path: path.resolve(__dirname, 'dist')
   },
+  devtool: 'inline-source-map',
   module: {
     rules: [
       {
@@ -16,8 +18,18 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {}
           },
-          'css-loader',
-          'postcss-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
+          }
         ]
       },
       {
@@ -27,9 +39,24 @@ module.exports = {
             loader: MiniCssExtractPlugin.loader,
             options: {}
           },
-          'css-loader',
-          'postcss-loader',
-          'sass-loader'
+          {
+            loader: 'css-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              sourceMap: true
+            }
+          },
+          {
+            loader: 'sass-loader',
+            options: {
+              sourceMap: true
+            }
+          },
         ]
       },
       {
@@ -41,7 +68,7 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "main.css",
+      filename: 'main.css'
     })
   ]
 };
