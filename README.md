@@ -23,3 +23,11 @@ yarn add -D rucksak-css lost autoprefixer cssnano
 ```
 yarn add -D mini-css-extract-plugin
 ```
+
+```
+yarn add -D html-webpack-plugin
+```
+
+```
+yarn add -D clean-webpack-plugin
+```
