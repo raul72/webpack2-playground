@@ -81,7 +81,14 @@ module.exports = {
       filename: 'main.css'
     }),
     new HtmlWebpackPlugin({
-      title: 'Multiple bundles'
+      filename: 'index.html',
+      template: 'src/views/index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'about.html',
+      template: 'src/views/about.html',
+      chunks: ['about']
     }),
     new BrowserSyncPlugin({
       host: 'localhost',
