@@ -31,3 +31,11 @@ yarn add -D html-webpack-plugin
 ```
 yarn add -D clean-webpack-plugin
 ```
+
+```
+yarn add -D webpack-dev-server
+```
+
+```
+yarn add -D browser-sync-webpack-plugin
+```
